@@ -276,7 +276,7 @@ namespace MetroFramework.Controls
 
         #region Private Methods
 
-        private Timer marqueeTimer;
+        private System.Windows.Forms.Timer marqueeTimer;
         private bool marqueeTimerEnabled = false;
 
         private void StartTimer()
@@ -285,7 +285,7 @@ namespace MetroFramework.Controls
 
             if (marqueeTimer == null)
             {
-                marqueeTimer = new Timer();
+                marqueeTimer = new System.Windows.Forms.Timer();
                 marqueeTimer.Interval = 10;
                 marqueeTimer.Tick += new EventHandler(marqueeTimer_Tick);
             }

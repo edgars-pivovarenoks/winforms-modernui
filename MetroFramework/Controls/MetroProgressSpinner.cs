@@ -79,7 +79,7 @@ namespace MetroFramework.Controls
 
         #region Fields
 
-        private Timer timer;
+        private System.Windows.Forms.Timer timer;
         private int progress;
         private float angle = 270;
 
@@ -188,7 +188,7 @@ namespace MetroFramework.Controls
 
         public MetroProgressSpinner()
         {
-            timer = new Timer();
+            timer = new System.Windows.Forms.Timer();
             timer.Interval = 20;
             timer.Tick += timer_Tick;
             timer.Enabled = true;

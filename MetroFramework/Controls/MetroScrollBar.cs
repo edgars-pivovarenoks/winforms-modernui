@@ -144,7 +144,7 @@ namespace MetroFramework.Controls
 
         private int trackPosition;
 
-        private readonly Timer progressTimer = new Timer();
+        private readonly System.Windows.Forms.Timer progressTimer = new System.Windows.Forms.Timer();
 
         private int mouseWheelBarPartitions = 10;
 
@@ -369,7 +369,7 @@ namespace MetroFramework.Controls
 
                     if (autoHoverTimer == null)
                     {
-                        autoHoverTimer = new Timer();
+                        autoHoverTimer = new System.Windows.Forms.Timer();
                         autoHoverTimer.Interval = 1000;
                         autoHoverTimer.Tick += new EventHandler(autoHoverTimer_Tick);
                         autoHoverTimer.Start();
@@ -396,7 +396,7 @@ namespace MetroFramework.Controls
             autoHoverTimer.Stop();
         }
 
-        private Timer autoHoverTimer = null;
+        private System.Windows.Forms.Timer autoHoverTimer = null;
 
         #endregion
 
